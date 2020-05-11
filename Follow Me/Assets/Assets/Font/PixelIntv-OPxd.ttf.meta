@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: fd55c3949ffb9f143ad064b060ac141a
+guid: f2275d88f683737469f071fcf1ed0add
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 150
+  fontSize: 16
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Forbid Nothing
+  fontName: Pixel Intv
   fontNames:
-  - Forbid Nothing
+  - Pixel Intv
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
