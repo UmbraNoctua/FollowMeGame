@@ -12,7 +12,26 @@ public class PlayerController : MonoBehaviour
     Vector2 movement;
 
     bool IsRunning;
+    public DialogueManager dialogueManager;
+    void Start()
+    {
+        dialogueManager = gameObject.GetComponent<DialogueManager>();
+    }
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                Dialogue dialogue = collision.gameObject.GetComponent<Dialogue>();
+                if (dialogue != null)
+                {
+                    dialogueManager.StartDialogue(dialogue);
+                }
+            }
+        }
 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -99,6 +118,9 @@ public class PlayerController : MonoBehaviour
         } //Running with D key and shift key
     }
 }
+
+
+
 
 
 
