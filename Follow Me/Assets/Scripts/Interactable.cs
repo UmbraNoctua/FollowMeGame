@@ -6,6 +6,7 @@ public class Interactable : MonoBehaviour
     public bool isInRange;
     public KeyCode interactKey;
     public UnityEvent interactAction;
+    
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class Interactable : MonoBehaviour
         {
             isInRange = true;
             Debug.Log("Player now in range");
+           // if player interacts with item, TriggerDialogue
         }
     }
 
