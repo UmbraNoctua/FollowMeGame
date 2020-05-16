@@ -1,10 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
-[System.Serializable]
-public class Dialogue
+
+public class Dialogue : MonoBehaviour
 {
-    [TextArea(3, 10)]
-    public string[] sentences;
+    public string startNode = "";
+
+    [Header("Optional")]
+    public YarnProgram dialogueScript;
+
+    void Start()
+    {
+        if (dialogueScript != null)
+        {
+            DialogueRunner dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
+            dialogueRunner.Add(dialogueScript);
+        }
+    }
+
+    public void StartDialogue()
+    {
+        // Kick off the dialogue at this node.
+        FindObjectOfType<DialogueRunner>().StartDialogue(startNode);
+    }
 }
