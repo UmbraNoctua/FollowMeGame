@@ -9,18 +9,19 @@ public class CameraController : MonoBehaviour
     public float smoothing;
     public Vector2 minPosition;
     public Vector2 maxPosition;
+
+    private float zoffset;
     void Start()
     {
-        
+        zoffset = transform.position.z;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (transform.position != target.position)
-
         {
-            Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
+            Vector3 targetPosition = new Vector3(target.position.x, target.position.y, zoffset);
 
             targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
             targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
