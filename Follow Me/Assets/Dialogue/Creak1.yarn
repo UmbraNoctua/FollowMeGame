@@ -1,0 +1,10 @@
+title: Creak1
+---
+===
+title: Creak
+---
+    <<if visited("Creak") is false>>
+        Player: that does not sound too good.
+        <<hide StartTrigger Self>>
+    <<endif>>
+===

@@ -1,0 +1,10 @@
+title: TreeFall
+---
+===
+title: Tree
+---
+    <<if visited("Creak") is false>>
+        Player: oh no, I am not alone out here after all.
+        <<hide StartTrigger Self>>
+    <<endif>>
+===
