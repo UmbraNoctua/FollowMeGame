@@ -8,6 +8,15 @@ public class RockPickup : MonoBehaviour
 
     void OnMouseDown()
     {
+        GetComponent<Rigidbody2D>().useGravity = false;
+        this.transform.position = theDest.position;
+        this.transform.parent = GameObject.Find("Destination").transform;
+    }
 
+    void OnMouseUp()
+    {
+        this.transform.parent = null;
+        GetComponent<Rigidbody2D>().useGravity = true;
     }
 }
+
