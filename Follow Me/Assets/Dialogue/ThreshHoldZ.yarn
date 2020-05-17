@@ -1,0 +1,10 @@
+title: ThreshholdTriggerZ
+---
+===
+title: ThreshholdZ
+---
+    <<if visited("Creak") is false>>
+        Player: looks like a pretty steep drop, if I go down here I probably won't be able to get back up without a ladder
+        <<hide StartTrigger Self>>
+    <<endif>>
+===
