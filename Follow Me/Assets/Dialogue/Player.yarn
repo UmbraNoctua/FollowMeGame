@@ -3,3 +3,11 @@ title: Player
     Player: Hey there! Never before.
     Player: Done this before.
 ===
+title: Spooky
+---
+    <<if visited("Spooky") is false>>
+        Player: Oh, a spooky forest!
+        Player: I wonder what I will find in here...
+        <<hide StartTrigger Self>>
+    <<endif>>
+===

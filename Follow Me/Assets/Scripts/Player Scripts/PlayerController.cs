@@ -18,13 +18,14 @@ public class PlayerController : MonoBehaviour
     {
         //dialogueManager = gameObject.GetComponent<DialogueManager>();
         dialogue = FindObjectOfType<DialogueRunner>();
+        GetComponent<GAD375.Prototyper.ObjectMover>().MoveObject("Initial");
     }
     
     // Update is called once per frame
     void Update()
     {
         //You can only move if you aren't talking
-        if (dialogue.IsDialogueRunning == false)
+        if (dialogue == null || dialogue.IsDialogueRunning == false)
         {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
@@ -54,8 +55,10 @@ public class PlayerController : MonoBehaviour
         var target = allParticipants.Find (delegate (Interactable p) 
         {
             return p.OnInteract.GetPersistentEventCount() > 0 && // has some interaction defined
-            (p.transform.position - this.transform.position)// is in range?
-            .magnitude <= interactionRadius;
+            ((p.transform.position - this.transform.position)// is in range?
+            .magnitude <= interactionRadius) &&
+            ((p.transform.position - this.transform.position)
+            .magnitude <= p.radius);
         });
         if (target != null) 
         {

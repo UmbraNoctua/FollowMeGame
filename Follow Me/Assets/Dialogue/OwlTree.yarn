@@ -1,0 +1,11 @@
+title: OwlTree
+---
+    
+===
+title: OwlTree.Scare
+---
+    <<if visited("OwlTree.Scare") is false>>
+        <<animate Owl_1 Owl_Flying>>
+        Player: Wow, this forest is creepier than I remember.
+    <<endif>>
+===

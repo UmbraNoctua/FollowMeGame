@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5916850450672385092}
   - component: {fileID: 5916850450672385093}
   - component: {fileID: 5916850450672385098}
-  - component: {fileID: 5916850450672385099}
+  - component: {fileID: 1839553642819549832}
+  - component: {fileID: 458475214050728828}
   m_Layer: 0
   m_Name: ruined_poster
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5916850450672385094}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.8043, y: 6.513, z: -0.27}
   m_LocalScale: {x: 0.6836, y: 0.6836, z: 0.6836}
   m_Children: []
@@ -108,7 +109,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.38, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &5916850450672385099
+--- !u!114 &1839553642819549832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,10 +118,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 5916850450672385094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 862e7a8d29ca3c44db9acce0c1505bdb, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a65d83bd7ead4046aacfa288600cd34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - " \u201CAn old poster\u2026 seems like its been here a while, I can\u2019t read
-      it\u201D"
+  startNode: RuinedPoster.B
+  dialogueScript: {fileID: 2480198943629176163, guid: 10241f819342c164bb66868a0eb465bd,
+    type: 3}
+--- !u!114 &458475214050728828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5916850450672385094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12398d73b4eb1948bd08df5d254a723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0.4
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1839553642819549832}
+        m_MethodName: StartDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    gameObject: {fileID: 0}
