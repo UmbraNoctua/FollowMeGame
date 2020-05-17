@@ -11348,6 +11348,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1447474477005592725, guid: c88b1a21ecf5c254598c7e52a7842971,
         type: 3}
+      propertyPath: positions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592725, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
       propertyPath: slots.Array.data[0]
       value: 
       objectReference: {fileID: 1600874529}
@@ -11366,6 +11371,21 @@ PrefabInstance:
       propertyPath: slots.Array.data[3]
       value: 
       objectReference: {fileID: 1217400994}
+    - target: {fileID: 1447474477005592725, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592725, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592725, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: positions.Array.data[0].name
+      value: Initial
+      objectReference: {fileID: 0}
     - target: {fileID: 1447474477005592731, guid: c88b1a21ecf5c254598c7e52a7842971,
         type: 3}
       propertyPath: m_LocalPosition.x
