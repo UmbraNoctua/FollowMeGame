@@ -1,10 +1,7 @@
 title: Creak2
 ---
-===
-title: Creak2
----
-    <<if visited("Creak") is false>>
-        Player: maybe going so far in alone is not such a great idea.
-        <<hide StartTrigger Self>>
+    <<if visited("Creak2") is false>>
+        Player: Maybe going so far in alone is not such a great idea.
+        <<hide CreakTrigger2 Self>>
     <<endif>>
 ===
