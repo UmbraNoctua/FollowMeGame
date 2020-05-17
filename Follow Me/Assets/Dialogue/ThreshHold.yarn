@@ -1,0 +1,10 @@
+title: ThreshholdTrigger
+---
+===
+title: Threshhold
+---
+    <<if visited("Creak") is false>>
+        Player: hmmmm, I do not think this is the right way to go.
+        <<hide StartTrigger Self>>
+    <<endif>>
+===
