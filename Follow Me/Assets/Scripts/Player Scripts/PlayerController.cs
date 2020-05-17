@@ -8,24 +8,29 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     public float interactionRadius = 2.0f;
+    public AudioClip walkAudio;
    // public Animator animator; *will add later on when we have animations
 
     private Vector2 movement;
     private DialogueRunner dialogue;
     private bool IsRunning;
+    private AudioSource audio;
+    private bool walking;
 
     void Start()
     {
         //dialogueManager = gameObject.GetComponent<DialogueManager>();
         dialogue = FindObjectOfType<DialogueRunner>();
+        audio = GetComponent<AudioSource>();
         GetComponent<GAD375.Prototyper.ObjectMover>().MoveObject("Initial");
+        walking = false;
     }
     
     // Update is called once per frame
     void Update()
     {
         //You can only move if you aren't talking
-        if (dialogue == null || dialogue.IsDialogueRunning == false)
+        if (dialogue.IsDialogueRunning == false)
         {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
@@ -35,6 +40,20 @@ public class PlayerController : MonoBehaviour
             movement = Vector2.zero;
         }
 
+        if (movement.magnitude > 0.3f)
+        {
+            WalkAudio(true);
+            walking = true;
+        }
+        else
+        {
+            if (walking == true)
+            {
+                walking = false;
+                WalkAudio(false);
+            }
+        }
+
         //animator.SetFloat("Horizontal", movement.x);
        // animator.SetFloat("Vertical", movement.y);
        // animator.SetFloat("Speed", movement.sqrMagnitude);
@@ -42,6 +61,26 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             CheckForNearbyInteractable();
+        }
+    }
+
+    void WalkAudio(bool shouldplay = true)
+    {
+        if (audio == null)
+            return;
+        if (shouldplay)
+        {
+            audio.clip = walkAudio;
+            if (!audio.isPlaying)
+            {
+                audio.loop = true;
+                audio.Play();
+            }
+        }
+        else
+        {
+            audio.loop = false; //this is if they just stopped walking
+            audio.Stop();
         }
     }
     void FixedUpdate()

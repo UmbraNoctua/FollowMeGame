@@ -4,7 +4,8 @@ title: TreeFall
 title: Tree
 ---
     <<if visited("Tree") is false>>
-        Player: oh no, I am not alone out here after all.
-        <<hide StartTrigger Self>>
+        <<sound TreeFallTrigger tree_fall>>
+        <<animate FallingTree TreeFall>>
+        Player: Oh no, I can't get back!
     <<endif>>
 ===

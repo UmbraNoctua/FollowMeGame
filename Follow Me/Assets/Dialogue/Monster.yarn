@@ -1,0 +1,11 @@
+title: Monster
+---
+===
+title: Monster.See
+---
+    <<if visited("Monster.See") is false>>
+        ... I'm not alone out here after all...
+        <<sound SeeMonsterTrigger monster_growl>>
+        What is THAT?!
+    <<endif>>
+===
