@@ -1,0 +1,10 @@
+title: WispTrigger3
+---
+===
+title: Wisp3
+---
+    <<if visited("Creak") is false>>
+        Player: Hey!, wait! Come Back!
+        <<hide StartTrigger Self>>
+    <<endif>>
+===
