@@ -4,25 +4,19 @@ using UnityEngine;
 
 public class RockPickup : MonoBehaviour
 {
-    private Inventory inventory;
+    public Transform theDest;
 
-    private void Start()
+    void OnMouseDown()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        GetComponent<Rigidbody2D>().useGravity = false;
+        this.transform.position = theDest.position;
+        this.transform.parent = GameObject.Find("Destination").transform;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnMouseUp()
     {
-        if (other.CompareTag("Player"))
-        {
-            for (int i = 0; i < inventory.Slots.Length; i++)
-            {
-                if (inventory.isFull[i] == false) 
-                {
-
-                    inventory.isFull[i] = true;
-                }
-            }
-        }
+        this.transform.parent = null;
+        GetComponent<Rigidbody2D>().useGravity = true;
     }
 }
+
