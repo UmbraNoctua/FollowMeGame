@@ -6,8 +6,8 @@ title: Player
 title: Spooky
 ---
     <<if visited("Spooky") is false>>
-        Player: Oh, a spooky forest!
-        Player: I wonder what I will find in here...
+        Oh, a spooky forest!
+        I wonder what I will find in here...
         <<hide StartTrigger Self>>
     <<endif>>
 ===

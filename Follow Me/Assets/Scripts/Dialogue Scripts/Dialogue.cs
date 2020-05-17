@@ -7,6 +7,7 @@ using Yarn.Unity;
 public class Dialogue : MonoBehaviour
 {
     public string startNode = "";
+    static List<YarnProgram> addedPrograms = new List<YarnProgram>();
 
     [Header("Optional")]
     public YarnProgram dialogueScript;
@@ -16,7 +17,12 @@ public class Dialogue : MonoBehaviour
         if (dialogueScript != null)
         {
             DialogueRunner dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
-            dialogueRunner.Add(dialogueScript);
+            if (!addedPrograms.Contains(dialogueScript))
+            {
+                dialogueRunner.Add(dialogueScript);
+                addedPrograms.Add(dialogueScript);
+            }
+
         }
     }
 

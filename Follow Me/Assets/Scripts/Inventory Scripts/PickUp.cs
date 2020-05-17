@@ -8,7 +8,7 @@ public class Pickup : MonoBehaviour
     public bool PickUp;
     RaycastHit2D hit;
     public float distance = 2f;
-    public Transform 
+    //public Transform 
 
     void Start()
     {
@@ -17,8 +17,9 @@ public class Pickup : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyCode(Mouse0));
-        {
+        //if (Input.GetKeyCode(Mouse0));
+        //{
+            /*
             if (!PickUp);
             {
                 Physics2D.raycastsStartInColliders = false;
@@ -30,16 +31,17 @@ public class Pickup : MonoBehaviour
                 PickUp = true;
             }
 
-        
-       }
+            */
+       //}
 
-        if(PickUp)
-            hit.collider.gameObject.transform.position=
-
-     void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position, transform.position + Vector2.right * transform.localScale.x, distance);
+        //if(PickUp)
+        //    hit.collider.gameObject.transform.position=
     }
-
+     
+    //void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.green;
+    //    Gizmos.DrawLine(transform.position, (Vector2)transform.position + Vector2.right * transform.localScale.x, distance);
+    //}
+}
 

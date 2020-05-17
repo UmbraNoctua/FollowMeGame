@@ -49,6 +49,12 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, interactionRadius);
+    }
+
     void CheckForNearbyInteractable()
     {
         var allParticipants = new List<Interactable> (FindObjectsOfType<Interactable> ());
@@ -56,9 +62,7 @@ public class PlayerController : MonoBehaviour
         {
             return p.OnInteract.GetPersistentEventCount() > 0 && // has some interaction defined
             ((p.transform.position - this.transform.position)// is in range?
-            .magnitude <= interactionRadius) &&
-            ((p.transform.position - this.transform.position)
-            .magnitude <= p.radius);
+            .magnitude <= (interactionRadius + p.radius));
         });
         if (target != null) 
         {
