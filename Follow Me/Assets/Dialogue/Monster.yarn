@@ -1,11 +1,12 @@
 title: Monster
 ---
 ===
-title: Monster.See
+title: Monster_See
 ---
-    <<if visited("Monster.See") is false>>
+    <<if visited("Monster_See") is false>>
         ... I'm not alone out here after all...
-        <<sound SeeMonsterTrigger monster_growl>>
+        <<sound Monster monster_growl>>
         What is THAT?!
     <<endif>>
+    <<hide SeeMonsterTrigger Self>>
 ===

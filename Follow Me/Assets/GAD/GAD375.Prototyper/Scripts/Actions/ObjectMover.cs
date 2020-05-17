@@ -29,6 +29,10 @@ namespace GAD375.Prototyper
                 moving = true;
                 destination = pos.position;
             }
+            else
+            {
+                Debug.Log("No position called " + posname);
+            }
         }
 
         [YarnCommand("teleport")]
@@ -40,6 +44,10 @@ namespace GAD375.Prototyper
             {
                 destination = pos.position;
                 transform.position = destination;
+            }
+            else
+            {
+                Debug.Log("No position called " + posname);
             }
         }
 

@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         //You can only move if you aren't talking
         if (dialogue.IsDialogueRunning == false)
         {
@@ -85,6 +86,11 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
+        //So if they get teleported, sync rb position with transform position?
+        if ((Vector2)transform.position != (Vector2)rb.position)
+        {
+            rb.position = transform.position;
+        }
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 

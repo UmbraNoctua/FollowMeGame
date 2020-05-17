@@ -6,6 +6,6 @@ title: Tree
     <<if visited("Tree") is false>>
         <<sound TreeFallTrigger tree_fall>>
         <<animate FallingTree TreeFall>>
-        Player: Oh no, I can't get back!
+        Player: Oh no, I'm trapped!
     <<endif>>
 ===

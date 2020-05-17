@@ -172,6 +172,7 @@ MonoBehaviour:
   moveSpeed: 3
   rb: {fileID: 1447474477005592729}
   interactionRadius: 0.36
+  walkAudio: {fileID: 8300000, guid: faebf29788e2cca41bdd8f6d1ab12464, type: 3}
 --- !u!61 &1447474477005592730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -342,5 +343,7 @@ MonoBehaviour:
   speed: 2
   positions:
   - name: Initial
+    data: {fileID: 0}
+  - name: fight_start
     data: {fileID: 0}
   distanceThreshold: 0.1
