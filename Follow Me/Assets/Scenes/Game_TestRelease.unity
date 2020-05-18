@@ -11109,5 +11109,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Log
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6909490194777490733, guid: 75018d399789090449c0d80b0e1c622c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 75018d399789090449c0d80b0e1c622c, type: 3}
