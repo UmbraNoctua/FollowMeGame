@@ -147,14 +147,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447474477005592735}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9fe974e263ea0c41bee0bfbcc85cb36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
   positions:
-  - name: Initial
+  - name: Initialrename
     data: {fileID: 0}
   - name: fight_start
     data: {fileID: 0}

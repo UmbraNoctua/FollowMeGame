@@ -8,6 +8,12 @@ title: Monster_See
         <<sound Monster monster_growl>>
         What is THAT?!
     <<endif>>
-    
+
     <<hide SeeMonsterTrigger Self>>
+===
+title: Monster.Reset
+---
+    Whoah that was strange, why am I over here?
+    <<sound Monster monster_growl>>
+    Oh no!
 ===

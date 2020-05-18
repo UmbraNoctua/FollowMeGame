@@ -44,6 +44,7 @@ public class MonsterController : MonoBehaviour
                 Rest();
             }
         }
+        /*
         if (state == MonsterState.RESTING)
         {
             restTimer += Time.deltaTime;
@@ -52,6 +53,7 @@ public class MonsterController : MonoBehaviour
                 Idle();
             }
         }
+        */
         if (state == MonsterState.STUNNED)
         {
             stunnedTimer += Time.deltaTime;
@@ -82,6 +84,10 @@ public class MonsterController : MonoBehaviour
     {
         state = MonsterState.RESTING;
         restTimer = 0.0f;
+        //disable my collider
+        //GetComponent<Collider2D>().enabled = false;
+        rb.isKinematic = true;
+        rb.velocity = Vector2.zero;
     }
 
     public void Stunned()
@@ -135,10 +141,7 @@ public class MonsterController : MonoBehaviour
                 GameObject log = col.collider.gameObject;
                 Destroy(log);
                 Rest();
-                //disable my collider
-                //GetComponent<Collider2D>().enabled = false;
-                rb.isKinematic = true;
-                rb.velocity = Vector2.zero;
+                
                 //now move!
                 GetComponent<ObjectMover>().MoveObject("monster_fight_end");
             }

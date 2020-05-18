@@ -1,6 +1,7 @@
 title: Rock
 ---
-    A rock! maybe I could use it somehow?
-	Maybe, if I click on the rock I could add it to my inventory.
-	Then I could grab and hold the rock with my mouse, hover it over where I want it to be thrown and let go.
+	<<if visited("Rock") is false>>
+    	A rock! maybe I could use it somehow?
+		I'll try clicking to throw...
+	<<endif>>
 ===

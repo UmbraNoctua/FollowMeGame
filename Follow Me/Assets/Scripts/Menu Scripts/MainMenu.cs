@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public void NewJourney ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
-        //calls the game scene from the build settings, the game scene has an index of 1
+        //calls whaterver scene is in the build index exactly after this one.
     }
     public void QuitGame()
     {
