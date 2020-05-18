@@ -13,8 +13,9 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 movement;
     private DialogueRunner dialogue;
-    private bool IsRunning;
     private AudioSource audio;
+    private RockThrower thrower;
+    private bool IsRunning;
     private bool walking;
 
     void Start()
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
         //dialogueManager = gameObject.GetComponent<DialogueManager>();
         dialogue = FindObjectOfType<DialogueRunner>();
         audio = GetComponent<AudioSource>();
+        thrower = GetComponent<RockThrower>();
         GetComponent<GAD375.Prototyper.ObjectMover>().MoveObject("Initial");
         walking = false;
     }
@@ -35,10 +37,24 @@ public class PlayerController : MonoBehaviour
         {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
+
+            //Only interact while not talking
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                CheckForNearbyInteractable();
+            }
+            //Only look for click positions when not talking
+            if (Input.GetMouseButtonDown(0)) //0 is left mouse
+            {
+                Vector2 clickpoint = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                thrower.ThrowRock(clickpoint);
+            }
         }
         else
         {
+            //No movement during dialogue
             movement = Vector2.zero;
+
         }
 
         if (movement.magnitude > 0.3f)
@@ -59,10 +75,7 @@ public class PlayerController : MonoBehaviour
        // animator.SetFloat("Vertical", movement.y);
        // animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            CheckForNearbyInteractable();
-        }
+        
     }
 
     void WalkAudio(bool shouldplay = true)

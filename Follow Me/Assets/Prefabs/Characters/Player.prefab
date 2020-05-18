@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 5472756266457787675}
   - component: {fileID: 2072685875753382312}
   - component: {fileID: 12903652}
-  - component: {fileID: 12903654}
+  - component: {fileID: 1685943203}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447474477005592735}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9fe974e263ea0c41bee0bfbcc85cb36, type: 3}
   m_Name: 
@@ -155,6 +155,8 @@ MonoBehaviour:
   speed: 2
   positions:
   - name: Initial
+    data: {fileID: 0}
+  - name: fight_start
     data: {fileID: 0}
   distanceThreshold: 0.1
 --- !u!114 &1447474477005592734
@@ -328,7 +330,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &12903654
+--- !u!114 &1685943203
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -337,13 +339,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1447474477005592735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9fe974e263ea0c41bee0bfbcc85cb36, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e0015fcd45c5a847bbeea96d36e3896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  positions:
-  - name: Initial
-    data: {fileID: 0}
-  - name: fight_start
-    data: {fileID: 0}
-  distanceThreshold: 0.1
+  rockPrefab: {fileID: -4682252424665029594, guid: a5a3449d7e0a1264ca09248c14393c96,
+    type: 3}
+  spawnDist: 0.5
+  strength: 30
