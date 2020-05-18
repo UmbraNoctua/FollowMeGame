@@ -345,4 +345,4 @@ MonoBehaviour:
   rockPrefab: {fileID: -4682252424665029594, guid: a5a3449d7e0a1264ca09248c14393c96,
     type: 3}
   spawnDist: 0.5
-  strength: 30
+  strength: 100

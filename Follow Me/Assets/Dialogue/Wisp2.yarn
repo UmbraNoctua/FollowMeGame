@@ -4,7 +4,7 @@ title: WispTrigger2
 title: Wisp2
 ---
     <<if visited("Creak") is false>>
-        Player: Oh! hey, what was that?
+        Oh! hey, what was that?
         <<hide StartTrigger Self>>
     <<endif>>
 ===

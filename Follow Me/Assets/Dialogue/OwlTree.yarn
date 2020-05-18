@@ -8,7 +8,7 @@ title: OwlTree.Scare
         <<animate Owl_1 Owl_Flying>>
         <<sound Player female_scream>>
         <<sound Owl_1 owl_hoot>>
-        Player: Wow, this forest is creepier than I remember.
+        Wow, this forest is creepier than I remember.
         <<sound Owl_1 owl_flap>>
         <<move Owl_1 OwlFinalPos>>
     <<endif>>
