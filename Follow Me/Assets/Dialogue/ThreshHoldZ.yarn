@@ -3,5 +3,7 @@ title: ThreshholdTriggerZ
 ===
 title: ThreshholdZ
 ---
-    Looks like a pretty steep drop, if I go down here I probably won't be able to get back up without a ladder
+    <<if visited("ThreshholdZ") is false>>
+    Looks like a pretty steep drop, if I go down here I probably won't be able to get back up without a ladder.
+    <<endif>>
 ===

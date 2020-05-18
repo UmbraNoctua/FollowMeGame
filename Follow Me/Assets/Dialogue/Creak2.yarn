@@ -2,6 +2,6 @@ title: Creak2
 ---
     <<if visited("Creak2") is false>>
         <<sound CreakTrigger2 creak>>
-        Player: Maybe going so far in alone is not such a great idea.
+        Maybe going so far in alone is not such a great idea.
     <<endif>>
 ===

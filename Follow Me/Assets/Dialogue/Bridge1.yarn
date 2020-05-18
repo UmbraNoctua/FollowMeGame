@@ -1,4 +1,11 @@
 title: Bridge
 ---
-    Player: whoa, I remember helping my dad build this last summer, we were so proud of how strong it was. So why does it look like it’s been broken for years?
+    <<if visited("Bridge") is false>>
+    Whoa, I remember helping my dad build this last summer. 
+    We were so proud of how strong it was. 
+    So why does it look like it’s been broken for years?
+    <<else>>
+    I could have sworn the bridge wasn’t like that this morning...
+    And why does it look so old?
+    <<endif>>
 ===

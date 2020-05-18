@@ -7,6 +7,7 @@ TagManager:
   - Wisp
   - Rock
   - PickUp
+  - Log
   layers:
   - Default
   - TransparentFX

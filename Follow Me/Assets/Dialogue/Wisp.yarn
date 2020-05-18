@@ -1,0 +1,34 @@
+title: Wisp
+---
+    <<if visited("Wisp") is false>>
+        <<teleport Wisp wisp_pos_1>>
+        Hey! What was that?
+    <<else>>
+        [[Wisp2]]
+    <<endif>>
+===
+title: Wisp2
+---
+    <<if visited("Wisp2") is false>>
+        <<teleport Wisp wisp_pos_2>>
+        Oh, it's gone again!
+    <<else>>
+        [[Wisp3]]
+    <<endif>>
+===
+title: Wisp3
+---
+    <<if visited("Wisp3") is false>>
+        <<teleport Wisp wisp_pos_3>>
+        Hey! Come back!
+    <<else>>
+        [[Wisp4]]
+    <<endif>>
+===
+title: Wisp4
+---
+    <<if visited("Wisp4") is false>>
+        <<teleport Wisp wisp_pos_4>>
+        Please, wait!
+    <<endif>>
+===

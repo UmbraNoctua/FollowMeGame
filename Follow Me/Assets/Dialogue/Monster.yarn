@@ -8,5 +8,6 @@ title: Monster_See
         <<sound Monster monster_growl>>
         What is THAT?!
     <<endif>>
+    
     <<hide SeeMonsterTrigger Self>>
 ===

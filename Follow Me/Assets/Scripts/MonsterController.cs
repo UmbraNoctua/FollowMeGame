@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GAD375.Prototyper;
 
 public class MonsterController : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class MonsterController : MonoBehaviour
     private Rigidbody2D rb;
     private MonsterState state;
     private Vector2 destination;
+    private Animator anim;
     private float distanceTravelled;
     private float restTimer = 0.0f;
     private float stunnedTimer = 0.0f;
@@ -29,6 +31,7 @@ public class MonsterController : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         
     }
 
@@ -65,12 +68,13 @@ public class MonsterController : MonoBehaviour
         restTimer = 0.0f;
         distanceTravelled = 0.0f;
         stunnedTimer = 0.0f;
+        anim.Play("Monster_Idle");
     }
 
-    public void Charge()
+    public void Charge(Vector2 position)
     {
         distanceTravelled = 0.0f;
-        destination = player.position;
+        destination = position;
         state = MonsterState.CHARGING;
     }
 
@@ -84,15 +88,23 @@ public class MonsterController : MonoBehaviour
     {
         state = MonsterState.STUNNED;
         stunnedTimer = 0.0f;
+        anim.Play("Monster_Dazed");
     }
 
     private void FixedUpdate()
     {
         if (state == MonsterState.CHARGING)
         {
-            Vector2 direction = destination - (Vector2)transform.position;
-            direction.Normalize();
-            moveCharacter(direction);
+            if (distanceTravelled < distUntilRest)
+            {
+                Vector2 direction = destination - (Vector2)transform.position;
+                direction.Normalize();
+                moveCharacter(direction);
+            }
+            else
+            {
+                Stunned();
+            }
         }
     }
 
@@ -106,5 +118,34 @@ public class MonsterController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         Debug.Log("Monster collided: " + col.collider.name);
+        if (col.collider.tag == "Player")
+        {
+            //leave the player, their behaviour is handled by the events
+        }
+        else if (col.collider.tag == "PickUp") //rocks are tagged with pickup
+        {
+            GameObject rock = col.collider.gameObject;
+            Destroy(rock);
+            Charge(player.position);
+        }
+        else if (col.collider.tag == "Log")
+        {
+            if (state == MonsterState.CHARGING)
+            {
+                GameObject log = col.collider.gameObject;
+                Destroy(log);
+                Rest();
+                //disable my collider
+                //GetComponent<Collider2D>().enabled = false;
+                rb.isKinematic = true;
+                rb.velocity = Vector2.zero;
+                //now move!
+                GetComponent<ObjectMover>().MoveObject("monster_fight_end");
+            }
+        }
+        else
+        {
+            Stunned();
+        }
     }
 }

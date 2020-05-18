@@ -3,5 +3,7 @@ title: ThreshholdTriggerY
 ===
 title: ThreshholdY
 ---
-    Player: Hmmmm, I do not think this is the right way to go.
+    <<if visited("ThreshholdY") is false>>
+    Hmmmm, I do not think this is the right way to go.
+    <<endif>>
 ===

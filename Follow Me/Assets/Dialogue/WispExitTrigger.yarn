@@ -3,8 +3,7 @@ title: WispExitTrigger
 ===
 title: WispExit
 ---
-    <<if visited("Creak") is false>>
+    <<if visited("WispExit") is false>>
         I do not think I can fit through there, I have got to find another way around.
-        <<hide StartTrigger Self>>
     <<endif>>
 ===
