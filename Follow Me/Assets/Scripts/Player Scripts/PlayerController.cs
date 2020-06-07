@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public float interactionRadius = 2.0f;
     public AudioClip walkAudio;
-   // public Animator animator; *will add later on when we have animations
+    public Animator animator; 
 
     private Vector2 movement;
     private DialogueRunner dialogue;
@@ -48,6 +48,12 @@ public class PlayerController : MonoBehaviour
             {
                 Vector2 clickpoint = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 thrower.ThrowRock(clickpoint);
+            }
+            {
+                animator.SetFloat("Horizontal", movement.x);
+                animator.SetFloat("Vertical", movement.y);
+                animator.SetFloat("Speed", movement.sqrMagnitude);
+
             }
         }
         else
