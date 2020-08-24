@@ -1829,7 +1829,7 @@ GameObject:
   m_Layer: 0
   m_Name: StartTrigger
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3154,8 +3154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c98c9b1046a3048aa9098b52167e25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFull: 
-  slots: []
 --- !u!114 &858041451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6848,6 +6846,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1447474477502830797}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1241436172
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241436171}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d66cf248b0a2657458dccd65148b75b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1241436177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9004,7 +9021,7 @@ BoxCollider2D:
   m_Offset: {x: 0.012146354, y: -0.92285776}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5179792, y: 0.118842125}
     oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
@@ -9621,6 +9638,11 @@ PrefabInstance:
       propertyPath: slots.Array.data[3]
       value: 
       objectReference: {fileID: 1217400994}
+    - target: {fileID: 1447474477005592728, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1447474477005592731, guid: c88b1a21ecf5c254598c7e52a7842971,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9676,6 +9698,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592734, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1241436172}
     - target: {fileID: 1447474477005592735, guid: c88b1a21ecf5c254598c7e52a7842971,
         type: 3}
       propertyPath: m_Name
