@@ -38,6 +38,15 @@ public class PlayerController : MonoBehaviour
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
+            //Idle Facing Directions
+            if(Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+            {
+                animator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+                animator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            }
+
+
+
             //Only interact while not talking
             if (Input.GetKeyDown(KeyCode.E))
             {
