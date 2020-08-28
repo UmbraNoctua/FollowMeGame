@@ -18,20 +18,23 @@ public class PlayerController : MonoBehaviour
     private bool IsRunning;
     private bool walking;
 
+    public VectorValue startingPosition;
+    
     void Start()
     {
         //dialogueManager = gameObject.GetComponent<DialogueManager>();
         dialogue = FindObjectOfType<DialogueRunner>();
         audio = GetComponent<AudioSource>();
         thrower = GetComponent<RockThrower>();
-        GetComponent<GAD375.Prototyper.ObjectMover>().MoveObject("Initial");
+        //GetComponent<GAD375.Prototyper.ObjectMover>().MoveObject("Initial");
         walking = false;
+        transform.position = startingPosition.initialValue;
+        Debug.Log(startingPosition.initialValue);
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        
         //You can only move if you aren't talking
         if (dialogue.IsDialogueRunning == false)
         {

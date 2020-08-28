@@ -41,13 +41,13 @@ GameObject:
   - component: {fileID: 1447474477005592731}
   - component: {fileID: 1447474477005592728}
   - component: {fileID: 1447474477005592729}
-  - component: {fileID: 8214344545515973075}
   - component: {fileID: 1447474477005592734}
   - component: {fileID: 1447474477005592730}
   - component: {fileID: 5472756266457787675}
   - component: {fileID: 2072685875753382312}
   - component: {fileID: 12903652}
   - component: {fileID: 1685943203}
+  - component: {fileID: 152025030}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -140,25 +140,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8214344545515973075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447474477005592735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9fe974e263ea0c41bee0bfbcc85cb36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  positions:
-  - name: Initialrename
-    data: {fileID: 0}
-  - name: fight_start
-    data: {fileID: 0}
-  distanceThreshold: 0.1
 --- !u!114 &1447474477005592734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,10 +152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e2ef0202a5500a468ec07c844509cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 1.8
   rb: {fileID: 1447474477005592729}
   interactionRadius: 0.36
   walkAudio: {fileID: 8300000, guid: faebf29788e2cca41bdd8f6d1ab12464, type: 3}
+  animator: {fileID: 152025030}
+  startingPosition: {fileID: 11400000, guid: 07be3fc3b4f6cd942a433ba5f806da05, type: 2}
 --- !u!61 &1447474477005592730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -188,7 +171,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0014791489}
+  m_Offset: {x: 0, y: -0.31192285}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -199,7 +182,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26057148, y: 0.77602196}
+  m_Size: {x: 0.26057148, y: 0.15513456}
   m_EdgeRadius: 0
 --- !u!114 &5472756266457787675
 MonoBehaviour:
@@ -346,3 +329,22 @@ MonoBehaviour:
     type: 3}
   spawnDist: 0.5
   strength: 100
+--- !u!95 &152025030
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447474477005592735}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d66cf248b0a2657458dccd65148b75b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

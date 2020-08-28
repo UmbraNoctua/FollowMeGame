@@ -9,11 +9,15 @@ public class MainMenu : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
 
+    public Vector2 gameStartPosition;
+    public VectorValue startingPosition;
+
 
     public void NewJourney ()
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-        //calls whaterver scene is in the build index exactly after this one.
+        startingPosition.initialValue = gameStartPosition;
+        //calls whatever scene is in the build index exactly after this one.
         //calls transition function LoadLevel below
     }
 
