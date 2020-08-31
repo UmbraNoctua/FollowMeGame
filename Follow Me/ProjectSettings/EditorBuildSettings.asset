@@ -8,10 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: cdf14b234890f934a978abbe494d91fd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game_TestRelease.unity
     guid: 26585cdafa8e3f943b26472352844111
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game.unity
     guid: a2c85ccf79a186949ae8aa897b0747b2
+  - enabled: 1
+    path: Assets/Scenes/Game_EOS-01.unity
+    guid: b68f849f9a23f8e43af935c033f16085
   m_configObjects: {}
