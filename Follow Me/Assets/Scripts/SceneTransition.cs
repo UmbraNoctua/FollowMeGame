@@ -8,8 +8,8 @@ public class SceneTransition : MonoBehaviour
     public string sceneToLoad;
     public Vector2 playerPosition;
     public VectorValue playerStorage;
-    //public bool firstLevel;
-    public int levelProgression;
+    public bool transitioning;
+    //public int levelProgression;
 
     
     public Animator transition;
@@ -26,15 +26,17 @@ public class SceneTransition : MonoBehaviour
     {
         if(other.CompareTag("Player") && !other.isTrigger)
         {
-            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + levelProgression));
+            //StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + levelProgression));
+            StartCoroutine(LoadLevel(sceneToLoad));
             playerStorage.initialValue = playerPosition;
         }
     }
     
 
         
-    IEnumerator LoadLevel(int levelIndex)
+    IEnumerator LoadLevel(string newScene)
     {
+        transitioning = true;
 
         //Play Animation
         transition.SetTrigger("Start");
@@ -43,10 +45,12 @@ public class SceneTransition : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         //Load Scene
-        SceneManager.LoadScene(levelIndex);
+        SceneManager.LoadScene(newScene);
 
         //Wait
         yield return new WaitForSeconds(1);
+
+        transitioning = false;
 
     }
 
