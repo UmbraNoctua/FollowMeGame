@@ -2,7 +2,7 @@ title: Wisp
 ---
     <<if visited("Wisp") is false>>
         <<teleport Wisp wisp_pos_1>>
-        Hey! What was that?
+        Oh! hey,what was that?
     <<else>>
         [[Wisp2]]
     <<endif>>
@@ -20,7 +20,7 @@ title: Wisp3
 ---
     <<if visited("Wisp3") is false>>
         <<teleport Wisp wisp_pos_3>>
-        Hey! Come back!
+        Hey! Wait! Come back!
     <<else>>
         [[Wisp4]]
     <<endif>>

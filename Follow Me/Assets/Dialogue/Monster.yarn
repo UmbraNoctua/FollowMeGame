@@ -4,16 +4,7 @@ title: Monster
 title: Monster_See
 ---
     <<if visited("Monster_See") is false>>
-        ... I'm not alone out here after all...
-        <<sound Monster monster_growl>>
-        What is THAT?!
+        Oh dear...I'm glad this fellow is a deep sleeper
     <<endif>>
 
-    <<hide SeeMonsterTrigger Self>>
-===
-title: Monster.Reset
----
-    Whoah that was strange, why am I over here?
-    <<sound Monster monster_growl>>
-    Oh no!
 ===
