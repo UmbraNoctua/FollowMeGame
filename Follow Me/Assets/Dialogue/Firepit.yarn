@@ -1,7 +1,0 @@
-
-title: FirepitDialogue
----
-    <<if visited("Firepit") is false>>
-       I guess someone was camping here? ...It’s cold. Let’s see… There we go!
-    <<endif>>
-===
