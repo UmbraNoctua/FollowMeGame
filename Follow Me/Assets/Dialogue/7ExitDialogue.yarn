@@ -1,0 +1,9 @@
+title: ExitDialogueTrigger
+---
+===
+title: ExitDialogue
+---
+    <<if visited("EntryDialogue") is false>>
+       I’m so close!
+    <<endif>>
+===
