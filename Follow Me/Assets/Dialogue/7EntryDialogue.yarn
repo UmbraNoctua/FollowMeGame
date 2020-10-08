@@ -1,9 +1,0 @@
-title: EntryDialogueTrigger
----
-===
-title: EntryDialogue
----
-    <<if visited("EntryDialogue") is false>>
-       Oh jeez, I’m all wet… Where am I?
-    <<endif>>
-===
