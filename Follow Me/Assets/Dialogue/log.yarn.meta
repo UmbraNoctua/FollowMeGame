@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4d8bae04e79826c44b3f7f3a859ad999
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-AU
+  stringIDs:
+  - log-Log-0
+  - log-Log-1
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 'Error on line 1 at position 1:token recognition error
+    at: ''[''
+
+'
+  baseLanguage: {instanceID: 0}
+  localizations: []

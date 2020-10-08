@@ -2698,7 +2698,7 @@ MonoBehaviour:
   target: {fileID: 1650245718}
   smoothing: 0.1
   minPosition: {x: -23, y: 2.6}
-  maxPosition: {x: -20, y: 4.02}
+  maxPosition: {x: -18.5, y: 4.02}
 --- !u!1 &2136792211
 GameObject:
   m_ObjectHideFlags: 0
