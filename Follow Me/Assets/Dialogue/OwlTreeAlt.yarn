@@ -1,17 +1,16 @@
-title: OwlTree
+title: OwlTreeAlt
 ---
     
 ===
-title: OwlTree.Scare
+title: OwlTreeAlt.Scare
 ---
     <<if visited("OwlTree.Scare") is false>>
-        <<animate Owl_1 Owl_Flying>>
-        <<sound Player female_scream>>
-        <<sound Owl_1 owl_hoot>>
-        <<sound Owl_1 owl_flap>>
-        <<move Owl_1 OwlPos1>>
-        <<wait 2>>
-        <<move Owl_1 OwlFinalPos>>
+        <<animate CutsceneCanvas FadeIn>>
+        <<animate CutsceneImage OwlScare1>>
+        <<wait 0.5>>
+        <<animate CutsceneImage OwlScare2>>
+        <<wait 0.5>>
+        <<animate CutsceneCanvas FadeOut>>
         Wow, this forest is creepier than I remember.
     <<endif>>
 ===

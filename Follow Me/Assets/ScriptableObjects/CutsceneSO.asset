@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffaed0f40205c4d488c727feb35a4aa5, type: 3}
   m_Name: CutsceneSO
   m_EditorClassIdentifier: 
-  cutsceneName: OwlScare
-  cutscene1: {fileID: 0}
-  cutscene2: {fileID: 0}
+  cutsceneName: CutsceneNameBlank
+  cutscene1: {fileID: 21300000, guid: 5c8e897165946b84688b48ce093ebcac, type: 3}
+  cutscene2: {fileID: 21300000, guid: 9463bfd6039efbe4bacfba885f1e2432, type: 3}
   cutscene3: {fileID: 0}
