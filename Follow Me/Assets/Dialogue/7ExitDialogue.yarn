@@ -3,7 +3,7 @@ title: ExitDialogueTrigger
 ===
 title: ExitDialogue
 ---
-    <<if visited("EntryDialogue") is false>>
-       I’m so close!
+    <<if visited("ExitDialogue") is false>>
+       Iï¿½m so close!
     <<endif>>
 ===
