@@ -1,10 +1,10 @@
 title: RuinedPoster.B
 ---
-    <<sound ruined_poster1 paper_crinkle>>
+    <<sound ruined_poster1 Poster_SteppedOn>
     An old poster... seems like its been here a while, I can’t read it.
 ===
 title: RuinedPoster.B2
 ---
-    <<sound ruined_poster2 paper_crinkle>>
+    <<sound ruined_poster2>>
     Another old poster? I guess whatever it’s for was important.
 ===
