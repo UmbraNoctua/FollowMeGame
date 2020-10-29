@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 43ab9a198caf2d841b813eb81e02486d
+guid: 907f4331811d73442b58d50627a775d4
 timeCreated: 1457408139
 licenseType: Store
 PluginImporter:
@@ -48,7 +48,7 @@ PluginImporter:
     WindowsStoreApps:
       enabled: 1
       settings:
-        CPU: X86
+        CPU: ARM
         DontProcess: False
         PlaceholderPath: 
         SDK: UWP
