@@ -1,5 +1,6 @@
 title: RuinedPoster.B
 ---
-    <<sound ruined_poster3 paper_crinkle>>
+   <<sound ruined_poster1 Dialogue_B>>
     hmm An old poster… seems like its been here a while, I can’t read it
+	 <<sound ruined_poster1 paper_crinkle>>
 ===

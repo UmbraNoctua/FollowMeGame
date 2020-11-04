@@ -392,6 +392,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 822400122}
     m_Modifications:
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Dialogue_B2
+      objectReference: {fileID: 0}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[1].data
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ba7ba27e1d4ea74885e99b7c48605ac, type: 3}
     - target: {fileID: 1839553642819549832, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: dialogueScript
@@ -1188,6 +1200,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 822400122}
     m_Modifications:
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Dialogue_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[1].data
+      value: 
+      objectReference: {fileID: 8300000, guid: 66f299ed47a089b40b3d6314f2e14284, type: 3}
+    - target: {fileID: 288850555, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1839553642819549832, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: startNode
