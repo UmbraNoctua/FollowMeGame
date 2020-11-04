@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 10241f819342c164bb66868a0eb465bd
+guid: 1404b4cda99f7a5458550adf475a8026
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -10,10 +10,10 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en-AU
   stringIDs:
-  - Player--0
+  - RuinedPoster2-RuinedPoster.B3-0
   compilationStatus: 1
   isSuccesfullyCompiled: 1
-  compilationErrorMessage: "Error on line 1 at position 1:\nmismatched input '<EOF>'
-    expecting {ID, HASHTAG}\r\n\r\n\n\nTokens:\n1:0 EOF \"<EOF>\""
-  baseLanguage: {instanceID: 0}
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 1e250029a63d0514eaa5aae3a76312a8,
+    type: 3}
   localizations: []

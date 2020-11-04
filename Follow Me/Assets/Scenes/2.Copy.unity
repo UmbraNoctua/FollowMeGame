@@ -392,6 +392,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 822400122}
     m_Modifications:
+    - target: {fileID: 1839553642819549832, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
+        type: 3}
+      propertyPath: dialogueScript
+      value: 
+      objectReference: {fileID: 2480198943629176163, guid: 1e250029a63d0514eaa5aae3a76312a8,
+        type: 3}
     - target: {fileID: 5916850450672385092, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1187,6 +1193,12 @@ PrefabInstance:
       propertyPath: startNode
       value: RuinedPoster.B
       objectReference: {fileID: 0}
+    - target: {fileID: 1839553642819549832, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
+        type: 3}
+      propertyPath: dialogueScript
+      value: 
+      objectReference: {fileID: 2480198943629176163, guid: 1404b4cda99f7a5458550adf475a8026,
+        type: 3}
     - target: {fileID: 5916850450672385092, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: m_LocalPosition.x
