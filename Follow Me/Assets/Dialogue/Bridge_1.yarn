@@ -1,0 +1,10 @@
+title: Bridge
+---
+
+    <<if visited("Bridge_1") is false>>
+    whoa I could have sworn the bridge wasn’t like that this morning… 
+	and why does it look so old
+
+    whoa  I remember helping my dad build this last summer, we were so proud of how strong it was.
+	so why does it look like it’s been broken for years?
+===
