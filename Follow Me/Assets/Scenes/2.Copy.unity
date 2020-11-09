@@ -1075,6 +1075,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 822400122}
     m_Modifications:
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Dialogue_D5
+      objectReference: {fileID: 0}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[1].data
+      value: 
+      objectReference: {fileID: 8300000, guid: 57ae0904cb1f55343827a2ba2c5920dd, type: 3}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: Dialogue_D6
+      objectReference: {fileID: 0}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[2].data
+      value: 
+      objectReference: {fileID: 8300000, guid: dbb96b9cbd4088b45bc13d31910ed82d, type: 3}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: Dialogue_D7
+      objectReference: {fileID: 0}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[3].data
+      value: 
+      objectReference: {fileID: 8300000, guid: ef57e8b4ec8849d47a32e2ea022f7e7d, type: 3}
     - target: {fileID: 1839553642819549832, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: startNode
@@ -1460,6 +1488,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 822400122}
     m_Modifications:
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Dialogue_B4
+      objectReference: {fileID: 0}
+    - target: {fileID: 288850554, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: sounds.Array.data[1].data
+      value: 
+      objectReference: {fileID: 8300000, guid: d776af029a08074499e6c29e8c6205ee, type: 3}
     - target: {fileID: 1839553642819549832, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: dialogueScript
