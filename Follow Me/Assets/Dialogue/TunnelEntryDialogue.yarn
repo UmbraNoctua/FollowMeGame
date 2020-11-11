@@ -4,6 +4,7 @@ title: TunnelEntryTrigger
 title: TunnelDialogue
 ---
     <<if visited("TunnelDialogue") is false>>
+	<<sound TunnelEntryTrigger Dialogue_H3>>
        ...I think I’ve had enough of these dark tunnels for now
     <<endif>>
 ===

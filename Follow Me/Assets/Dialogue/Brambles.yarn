@@ -2,6 +2,7 @@
 title: BramblesDialogue
 ---
     <<if visited("Brambles") is false>>
-       These brambles seem to have grown so fast since I was here last… How long has it been? In any case, I can’t get past.
+	<<sound Brambles Dialogue_J3>>
+       ouch! these brambles seem to have grown so fast since I was here last… How long has it been? In any case, I can’t get past
     <<endif>>
 ===
