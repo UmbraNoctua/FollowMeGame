@@ -2,6 +2,7 @@
 title: BridgeDialogue
 ---
     <<if visited("Bridge") is false>>
+	<<sound Bridge Dialogue_J4>>
       This bridge again. I’ll have to find a way to fix it once I’ve figured out what’s going on.
     <<endif>>
 ===

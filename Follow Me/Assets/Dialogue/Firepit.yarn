@@ -2,7 +2,7 @@
 title: FirepitDialogue
 ---
     <<if visited("Firepit") is false>>
-	<<sound Hub_FirePit Dialogue_J6>>
+	<<sound FirePit Dialogue_J6>>
        There’s a campfire here. Although the wood has all blackened and gone cold. They left their tent here too. Did they leave in a rush?
     <<endif>>
 ===
