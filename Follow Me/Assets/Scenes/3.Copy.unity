@@ -514,7 +514,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Owl_1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 245625093, guid: 44be05b928d93ee449f8a9889654ba9f, type: 3}
+    - {fileID: 245625094, guid: 44be05b928d93ee449f8a9889654ba9f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 44be05b928d93ee449f8a9889654ba9f, type: 3}
 --- !u!4 &352997449 stripped
 Transform:
