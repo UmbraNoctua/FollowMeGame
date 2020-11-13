@@ -1,0 +1,8 @@
+
+title: PodiumDialogue
+---
+    <<if visited("Podium_Temp") is false>>
+	<<sound PodiumTemp Dialogue_Exit2>>
+       There’s an indent here… Something must go in it
+    <<endif>>
+===
