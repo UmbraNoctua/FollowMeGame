@@ -11,6 +11,7 @@ title: OwlTreeAlt.Scare
         <<animate CutsceneImage OwlScare2>>
         <<wait 0.5>>
         <<animate CutsceneCanvas FadeOut>>
+		<<sound OTBottom Dialogue_A2>>
         Wow, this forest is creepier than I remember.
     <<endif>>
 ===

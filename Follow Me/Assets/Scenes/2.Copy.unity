@@ -483,7 +483,7 @@ PrefabInstance:
     - target: {fileID: 5916850450672385094, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: m_Name
-      value: ruined_poster2
+      value: ruinedposter2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}

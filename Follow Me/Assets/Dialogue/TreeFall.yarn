@@ -6,6 +6,8 @@ title: Tree
     <<if visited("Tree") is false>>
         <<sound TreeFallTrigger tree_fall>>
         <<animate FallingTree TreeFall>>
+		<<sound TreeFallTrigger Dialogue_D3>>
+		<<sound TreeFallTrigger Dialogue_D4>>
         Oh no, I'm trapped!
     <<endif>>
 ===

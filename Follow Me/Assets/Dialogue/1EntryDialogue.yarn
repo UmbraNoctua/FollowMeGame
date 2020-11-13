@@ -1,0 +1,7 @@
+title: 1EntryDialogue
+---
+    <<if visited("1EntryDialogue") is false>>
+	<<sound 1EntryDialogue Dialogue_A1>>
+       Where am I? How did I get here? I reckon I’m in the forest near my Dad’s cottage. I reckon I’ll be able to find it. Maybe I should try looking for it.
+    <<endif>>
+===
