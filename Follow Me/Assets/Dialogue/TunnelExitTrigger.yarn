@@ -1,0 +1,10 @@
+title: TunnelExitTrigger
+---
+===
+title: TunnelDialogue1
+---
+    <<if visited("TunnelDialogue1") is false>>
+	<<sound TunnelExitTrigger Dialogue_J7>>
+       Oh … it’s far too dark over there. There’s no way I’m going any further this way.
+    <<endif>>
+===

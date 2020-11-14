@@ -4,6 +4,7 @@ title: EntryDialogueTrigger
 title: EntryDialogue
 ---
     <<if visited("EntryDialogue") is false>>
-       Oh jeez, I'm all wet... Where am I?
+	<<sound EntryDialogueTrigger Dialogue_H>>
+       Oh no, I'm all wet... Where am I?
     <<endif>>
 ===

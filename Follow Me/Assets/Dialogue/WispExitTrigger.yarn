@@ -4,6 +4,7 @@ title: WispExitTrigger
 title: WispExit
 ---
     <<if visited("WispExit") is false>>
-        If you would just come a bit closer...
+	<<sound WispExitTrigger Dialogue_G2>>
+        If you could just come a little bit closer... then
     <<endif>>
 ===

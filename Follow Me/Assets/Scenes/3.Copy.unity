@@ -514,6 +514,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Owl_1
       objectReference: {fileID: 0}
+    - target: {fileID: 805888123377193780, guid: 44be05b928d93ee449f8a9889654ba9f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 245625093, guid: 44be05b928d93ee449f8a9889654ba9f, type: 3}
     - {fileID: 245625094, guid: 44be05b928d93ee449f8a9889654ba9f, type: 3}
