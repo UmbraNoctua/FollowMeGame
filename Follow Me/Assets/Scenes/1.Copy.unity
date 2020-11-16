@@ -1074,6 +1074,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7685429291936075663, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbdd2eadbf0ef8447ad654dda2b66c3d, type: 3}
 --- !u!1 &1901661826
@@ -1480,6 +1485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592734, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: walkAudio
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1447474477005592735, guid: c88b1a21ecf5c254598c7e52a7842971,
         type: 3}

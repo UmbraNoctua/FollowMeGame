@@ -1500,6 +1500,10 @@ PrefabInstance:
       propertyPath: sounds.Array.data[1].data
       value: 
       objectReference: {fileID: 8300000, guid: d776af029a08074499e6c29e8c6205ee, type: 3}
+    - target: {fileID: 288850555, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1839553642819549832, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: dialogueScript
@@ -1514,12 +1518,12 @@ PrefabInstance:
     - target: {fileID: 5916850450672385092, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.801
+      value: -22.7373
       objectReference: {fileID: 0}
     - target: {fileID: 5916850450672385092, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.607
+      value: 3.6619
       objectReference: {fileID: 0}
     - target: {fileID: 5916850450672385092, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
@@ -1566,6 +1570,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5916850450672385092, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2147617
+      objectReference: {fileID: 0}
+    - target: {fileID: 5916850450672385092, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.141489
+      objectReference: {fileID: 0}
     - target: {fileID: 5916850450672385093, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -1576,6 +1590,12 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5916850450672385093, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5fca904ee61775f498e41cdda8faa161,
+        type: 3}
     - target: {fileID: 5916850450672385094, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: m_Name
@@ -1600,6 +1620,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 1.0444072
+      objectReference: {fileID: 0}
+    - target: {fileID: 5916850450672385098, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5916850450672385098, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a67de661e9e0134bbc0a688c6b6d9f3, type: 3}
