@@ -4,7 +4,9 @@ title: Monster
 title: Monster_See
 ---
     <<if visited("Monster_See") is false>>
+	<<sound SeeMonsterTrigger Dialogue_E>>
         Oh dear...I'm glad this fellow is a deep sleeper
+
     <<endif>>
 
 ===
