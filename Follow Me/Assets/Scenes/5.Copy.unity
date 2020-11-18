@@ -1229,7 +1229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startNode: Bridge
-  dialogueScript: {fileID: 2480198943629176163, guid: 2700e7288717a9c4580abe08c8f72a40,
+  dialogueScript: {fileID: 2480198943629176163, guid: fda34b902ea0f3b408742994a5575ba0,
     type: 3}
 --- !u!114 &1036069218
 MonoBehaviour:
@@ -1300,8 +1300,6 @@ MonoBehaviour:
   sounds:
   - name: Dialogue_F2a
     data: {fileID: 8300000, guid: 0e9f2dcf40e5f2443a33e48b4ca9edc0, type: 3}
-  - name: Dialogue_F2b
-    data: {fileID: 0}
 --- !u!82 &1036069222
 AudioSource:
   m_ObjectHideFlags: 0
