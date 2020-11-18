@@ -1,10 +1,11 @@
 
-title: BridgeDialogue
+title: Bridge1
 ---
     <<if visited("Bridge1") is false>>
-	<<sound Bridge Dialogue_F2a>>
+	<<sound Bridge1 Dialogue_F2a>>
       whoa I could have sworn the bridge wasn’t like that this morning… 
 	and why does it look so old?
-	
+   <<sound Bridge1 Dialogue_F4>>
+   Either way, it’s going to be much harder for me to get back to my dad’s cottage without this. I’m going to have to find another way.
     <<endif>>
 ===

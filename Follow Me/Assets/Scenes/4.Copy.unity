@@ -3960,6 +3960,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: log
       objectReference: {fileID: 0}
+    - target: {fileID: 5916850450672385094, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5916850450672385098, guid: 1a67de661e9e0134bbc0a688c6b6d9f3,
         type: 3}
       propertyPath: m_Offset.y
