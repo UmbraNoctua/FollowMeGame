@@ -5,8 +5,12 @@ title: ThreshholdZ
 ---
     <<if visited("ThreshholdZ") is false>>
 	<<sound ThreshholdTriggerZ Dialogue_F3a>>
-    Looks like a pretty steep drop, if I go down here I probably won't be able to get back up without a ladder.
-
-	
+   ooh Looks like a pretty steep drop, if I go down here I probably won't be able to get back up without a ladder.
+   <<else>>
+   <<sound ThreshholdTriggerZ Dialogue_F3b>>
+	It looks like a pretty steep drop. I don’t think I’m going to be able to climb back up here once I go down, but I don’t see any other safe way forward
+	Do I want to go down?
+	[[Yes.|SceneTransition]]
+	[[No.]]
     <<endif>>
 ===
