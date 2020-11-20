@@ -2065,7 +2065,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1790204325, guid: 9819f9c18cc64a642bac4c986cf9ebc8, type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790204325, guid: 9819f9c18cc64a642bac4c986cf9ebc8, type: 3}
       propertyPath: sounds.Array.data[0].data
+      value: 
+      objectReference: {fileID: 8300000, guid: 035db28f50f9ab74988bc7bf2112b070, type: 3}
+    - target: {fileID: 1790204325, guid: 9819f9c18cc64a642bac4c986cf9ebc8, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Dialogue_E
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790204325, guid: 9819f9c18cc64a642bac4c986cf9ebc8, type: 3}
+      propertyPath: sounds.Array.data[1].data
       value: 
       objectReference: {fileID: 8300000, guid: 035db28f50f9ab74988bc7bf2112b070, type: 3}
     - target: {fileID: 212753374192421954, guid: 9819f9c18cc64a642bac4c986cf9ebc8,
