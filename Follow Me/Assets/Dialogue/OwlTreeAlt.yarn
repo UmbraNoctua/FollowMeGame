@@ -4,7 +4,9 @@ title: OwlTreeAlt
 ===
 title: OwlTreeAlt.Scare
 ---
-    <<if visited("OwlTree.Scare") is false>> 
+    <<if visited("OwlTree.Scare") is false>>
+        <<show OTBottom Owl_Cutscene>>
+        <<wait 4.1>>
 		<<sound OTBottom Dialogue_A2>>
         Wow, this forest is creepier than I remember.
     <<endif>>
