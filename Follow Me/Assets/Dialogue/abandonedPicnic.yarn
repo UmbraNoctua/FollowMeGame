@@ -1,0 +1,8 @@
+
+title: abondonedPicnicMosslessDialogue
+---
+    <<if visited("abondonedPicnicMossless") is false>>
+	<<sound abondonedPicnicMossless  Dialogue_J>>
+       Who even litters these days? 
+    <<endif>>
+===

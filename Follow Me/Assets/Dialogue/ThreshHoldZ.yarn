@@ -3,8 +3,8 @@ title: ThreshholdTriggerZ
 ===
 title: ThreshholdZ
 ---
+<<sound ThreshholdTriggerZ Dialogue_F3b>>
     <<if visited("ThreshholdZ") is false>>
-   <<sound ThreshholdTriggerZ Dialogue_F3b>>
 	It looks like a pretty steep drop. I don’t think I’m going to be able to climb back up here once I go down, but I don’t see any other safe way forward
     <<endif>>
 ===

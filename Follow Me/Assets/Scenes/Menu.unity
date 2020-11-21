@@ -620,7 +620,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f2275d88f683737469f071fcf1ed0add, type: 3}
+    m_Font: {fileID: 12800000, guid: 7646c4c2df36eb740baee72c703933df, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -898,6 +898,7 @@ GameObject:
   - component: {fileID: 763028114}
   - component: {fileID: 763028116}
   - component: {fileID: 763028115}
+  - component: {fileID: 763028117}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -961,6 +962,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763028113}
   m_CullTransparentMesh: 0
+--- !u!95 &763028117
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763028113}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a89b6fd534c71f1499804b04be2d1359, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &821997628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,7 +1436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1062280034
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1644,7 +1664,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f2275d88f683737469f071fcf1ed0add, type: 3}
+    m_Font: {fileID: 12800000, guid: 7646c4c2df36eb740baee72c703933df, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -1683,7 +1703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1297239192
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2267,6 +2287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1696542420}
   - component: {fileID: 1696542421}
+  - component: {fileID: 1696542422}
   m_Layer: 5
   m_Name: MusicSlider
   m_TagString: Untagged
@@ -2345,18 +2366,19 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1309491777}
-        m_MethodName: MusicVolumeLevel
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1696542422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696542419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6294b88b10e2cb46b47e1ff985864c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1703922111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,7 +2742,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f2275d88f683737469f071fcf1ed0add, type: 3}
+    m_Font: {fileID: 12800000, guid: 7646c4c2df36eb740baee72c703933df, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -3204,7 +3226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2040457991
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3387,7 +3409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2132002507
 SpriteRenderer:
   m_ObjectHideFlags: 0

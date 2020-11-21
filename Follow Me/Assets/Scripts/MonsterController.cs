@@ -33,8 +33,7 @@ public class MonsterController : MonoBehaviour
     }
 
 
-  
-   
+
     public void Rest()
     {
         state = MonsterState.RESTING;

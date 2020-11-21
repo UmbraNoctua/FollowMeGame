@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Monster : MonoBehaviour
+public class Slider : MonoBehaviour
 {
+    float volume = 0.5f;
     // Start is called before the first frame update
-    void Start()
+    void SaveSliderValue()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        PlayerPrefs.SetFloat("SliderVolumeLevel", volume);
     }
 }

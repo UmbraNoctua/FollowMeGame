@@ -1,0 +1,7 @@
+title: MausoluemDialogue
+---
+    <<if visited("MausoluemDialogue") is false>>
+	<<sound MausoluemDialogue Dialogue_J8>>
+     This creepy looking building seems to be the only way forward. Do I really want to go in there?” 
+    <<endif>>
+===
