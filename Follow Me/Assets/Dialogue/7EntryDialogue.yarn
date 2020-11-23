@@ -4,7 +4,15 @@ title: EntryDialogueTrigger
 title: EntryDialogue
 ---
     <<if visited("EntryDialogue") is false>>
-	<<sound EntryDialogueTrigger Dialogue_H>>
+	    <<sound EntryDialogueTrigger Dialogue_H>>
        Oh no, I'm all wet... Where am I?
     <<endif>>
+===
+title: BrokenSentinel
+---
+    I don't like the sound of that...
+===
+title: Respawn
+---
+    Ah! Ugh, I hate these things...
 ===
