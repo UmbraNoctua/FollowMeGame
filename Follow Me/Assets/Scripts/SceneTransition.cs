@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 public class SceneTransition : MonoBehaviour
 {
@@ -31,6 +32,14 @@ public class SceneTransition : MonoBehaviour
             playerStorage.initialValue = playerPosition;
         }
     }
+
+    [YarnCommand("MoveToNextScene")]
+    public void MoveScene()
+    {
+        //StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + levelProgression));
+        StartCoroutine(LoadLevel(sceneToLoad));
+    }
+
     
 
         

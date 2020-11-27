@@ -1,0 +1,24 @@
+title: Cabin
+---
+===
+title: CabinSeen
+---
+    <<if visited("CabinSeen") is false>>
+	    <<sound EntryDialogueTrigger Dialogue_L>>
+       Oh I finally made it! Dad’s cottage! But the aren’t any lights on… he mustn’t be here right now.
+    <<endif>>
+===
+title: CabinIn
+---
+    <<show CutsceneTrigger CabinCutscene>>
+    <<delayshow CutsceneTrigger>>
+    <<sound CutsceneTrigger Dialogue_L1>>
+    Ah! Thank goodness! It’s not particularly warm in here but at least it’s not as cold as it is outside.
+    Where’s Dad though? And why does it look like he’s replaced all the furniture? 
+    There’s a stack of papers near the fireplace. Maybe I can use them to start… 
+    Wait a second… These papers look like the missing posters I found out in the forest. 
+    That’s strange… Why does Dad have so many of them? 
+    And why… Why is it showing my face? Dad! I’m right here!
+    Where are you? How long have I been gone?
+    <<MoveToNextScene SceneTransitionNext>>
+===
