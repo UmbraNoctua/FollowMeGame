@@ -10,9 +10,11 @@ title: EntryDialogue
 ===
 title: BrokenSentinel
 ---
+<<sound brokensentinel Dialogue_Hstar>>
     I don't like the sound of that...
 ===
 title: Respawn
 ---
+
     Ah! Ugh, I hate these things...
 ===

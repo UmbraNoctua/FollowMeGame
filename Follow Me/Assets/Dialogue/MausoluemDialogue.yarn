@@ -1,7 +1,7 @@
-title: MausoluemDialogue
+title: MausoleumDialogue
 ---
-    <<if visited("MausoluemDialogue") is false>>
-	<<sound MausoluemDialogue Dialogue_J8>>
+    <<if visited("MausoleumDialogue") is false>>
+	<<sound Mausolueum Dialogue_J8>>
      This creepy looking building seems to be the only way forward. Do I really want to go in there?” 
     <<endif>>
 ===
