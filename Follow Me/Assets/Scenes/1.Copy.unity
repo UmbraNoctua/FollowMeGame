@@ -779,25 +779,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6956585591984948196, guid: 99065ea1cbb1a104888b86798c6c17df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956585591984948196, guid: 99065ea1cbb1a104888b86798c6c17df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.76
+      objectReference: {fileID: 0}
     - target: {fileID: 6956585591984948199, guid: 99065ea1cbb1a104888b86798c6c17df,
         type: 3}
       propertyPath: minPosition.x
-      value: -21.8
+      value: -23.42
       objectReference: {fileID: 0}
     - target: {fileID: 6956585591984948199, guid: 99065ea1cbb1a104888b86798c6c17df,
         type: 3}
       propertyPath: minPosition.y
-      value: 2.4
+      value: -0.76
       objectReference: {fileID: 0}
     - target: {fileID: 6956585591984948199, guid: 99065ea1cbb1a104888b86798c6c17df,
         type: 3}
       propertyPath: maxPosition.x
-      value: -19.66
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 6956585591984948199, guid: 99065ea1cbb1a104888b86798c6c17df,
         type: 3}
       propertyPath: maxPosition.y
-      value: 3.5
+      value: 5.01
       objectReference: {fileID: 0}
     - target: {fileID: 6956585591984948199, guid: 99065ea1cbb1a104888b86798c6c17df,
         type: 3}
@@ -2308,6 +2318,7 @@ MonoBehaviour:
   objects:
   - name: Self
     data: {fileID: 1901661826}
+  image: {fileID: 0}
 --- !u!114 &1901661833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2373,8 +2384,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926214607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.007, y: -14.169, z: 0}
-  m_LocalScale: {x: 1.1680741, y: 1.7002337, z: 0}
+  m_LocalPosition: {x: -7.57, y: -14.169, z: 0}
+  m_LocalScale: {x: 1.0658677, y: 1.7002337, z: 0}
   m_Children: []
   m_Father: {fileID: 716783007}
   m_RootOrder: 2

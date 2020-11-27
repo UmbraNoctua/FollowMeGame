@@ -880,6 +880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objects: []
+  image: {fileID: 0}
 --- !u!114 &447580381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,14 +1152,14 @@ RectTransform:
   m_GameObject: {fileID: 468265888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3776743, y: 1.5671046, z: 1.3776743}
   m_Children: []
   m_Father: {fileID: 576070093}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 6, y: -26}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468265890
@@ -3906,6 +3907,7 @@ MonoBehaviour:
   objects:
   - name: TunnelTrigger
     data: {fileID: 1239621117}
+  image: {fileID: 0}
 --- !u!114 &1239621122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4765,6 +4767,7 @@ MonoBehaviour:
   objects:
   - name: TunnelTrigger
     data: {fileID: 1545397111}
+  image: {fileID: 0}
 --- !u!114 &1545397116
 MonoBehaviour:
   m_ObjectHideFlags: 0

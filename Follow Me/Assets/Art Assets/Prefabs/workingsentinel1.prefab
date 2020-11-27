@@ -207,7 +207,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.9628624
+  m_Radius: 2.1914907
 --- !u!61 &6602924071237874187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -305,7 +305,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.3757802
+  m_Radius: 1.0136285
 --- !u!114 &4279356984599395794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,11 +341,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 001a7c39e6211f441a600de4b77a541d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 
-  playerPosition: {x: 0, y: 0}
-  playerStorage: {fileID: 0}
-  transitioning: 0
+  playerPosition: {fileID: 0}
+  originalPosition: {x: 0, y: 0}
+  respawning: 0
   transition: {fileID: 0}
+  startNode: 
+  dialogueScript: {fileID: 0}
 --- !u!1 &8561684529476045657
 GameObject:
   m_ObjectHideFlags: 0

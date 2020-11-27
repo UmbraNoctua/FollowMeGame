@@ -1177,6 +1177,7 @@ MonoBehaviour:
   objects:
   - name: Wisp
     data: {fileID: 2013042657}
+  image: {fileID: 0}
 --- !u!114 &810608422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,7 +1252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810608420}
   m_LocalRotation: {x: 0.10241546, y: -0.0032279827, z: -0.70061564, w: 0.7061434}
-  m_LocalPosition: {x: 32.79, y: -8.24, z: 7.28}
+  m_LocalPosition: {x: 32.93, y: -8.24, z: 7.301}
   m_LocalScale: {x: 1, y: 1.09464, z: 1}
   m_Children:
   - {fileID: 2121710440}
@@ -1416,6 +1417,7 @@ MonoBehaviour:
   objects:
   - name: Self
     data: {fileID: 865968025}
+  image: {fileID: 0}
 --- !u!61 &865968032
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1789,6 +1791,7 @@ MonoBehaviour:
   objects:
   - name: Self
     data: {fileID: 984016706}
+  image: {fileID: 0}
 --- !u!114 &984016708
 MonoBehaviour:
   m_ObjectHideFlags: 0

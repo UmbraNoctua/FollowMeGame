@@ -10,14 +10,23 @@ public class Cutscene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, cutSceneTime); //destroy after animation is done.
+        StartCoroutine(DisableSelf());
     }
 
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            Destroy(gameObject); //destroy immediately
+            gameObject.SetActive(false); //destroy immediately
         }
+    }
+
+     IEnumerator DisableSelf()
+    {
+       
+        yield return new WaitForSeconds(cutSceneTime);
+
+        gameObject.SetActive(false);
+
     }
 }
