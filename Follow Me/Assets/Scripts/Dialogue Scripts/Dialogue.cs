@@ -6,7 +6,6 @@ using Yarn.Unity;
 public class Dialogue : MonoBehaviour
 {
     public string startNode = "";
-    private DialogueRunner dialogue;
     
 
     [Header("Optional")]
@@ -14,7 +13,6 @@ public class Dialogue : MonoBehaviour
 
     void Start()
     {
-        dialogue = FindObjectOfType<DialogueRunner>();
         if (dialogueScript != null)
         {
             GameManager.instance.AddDialogue(dialogueScript);
@@ -25,7 +23,5 @@ public class Dialogue : MonoBehaviour
     {
         // Kick off the dialogue at this node.
         GameManager.instance.StartDialogue(startNode);
-        dialogue.IsDialogueRunning = true;
-        Debug.Log(dialogue.IsDialogueRunning);
     }
 }

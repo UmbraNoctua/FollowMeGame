@@ -226,7 +226,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327335304}
   m_CullTransparentMesh: 0
---- !u!1 &688465714
+--- !u!1 &542342646
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,9 +234,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 688465717}
-  - component: {fileID: 688465716}
-  - component: {fileID: 688465715}
+  - component: {fileID: 542342648}
+  - component: {fileID: 542342647}
   m_Layer: 0
   m_Name: LocationParameter
   m_TagString: Untagged
@@ -244,36 +243,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &688465715
+--- !u!114 &542342647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688465714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/ambience
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!114 &688465716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688465714}
+  m_GameObject: {fileID: 542342646}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
@@ -283,13 +259,13 @@ MonoBehaviour:
   parameter: Location
   TriggerEvent: 1
   value: 0
---- !u!4 &688465717
+--- !u!4 &542342648
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688465714}
+  m_GameObject: {fileID: 542342646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.06573, y: 10.991626, z: 4.2094994}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1647,6 +1623,21 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2706706605398301233, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706706605398301233, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706706605398301233, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2706706605398301239, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1765,6 +1756,11 @@ PrefabInstance:
     - target: {fileID: 2706706606431816167, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
         type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685429291936075663, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
