@@ -946,7 +946,7 @@ PrefabInstance:
     - target: {fileID: -8708443676540605760, guid: 3185a9c368ed8e04aace895f1c70bee0,
         type: 3}
       propertyPath: sceneToLoad
-      value: 11.Copy
+      value: 10.Copy
       objectReference: {fileID: 0}
     - target: {fileID: -8708443676540605760, guid: 3185a9c368ed8e04aace895f1c70bee0,
         type: 3}
@@ -1599,6 +1599,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1238101596}
     m_Modifications:
+    - target: {fileID: 12903652, guid: c88b1a21ecf5c254598c7e52a7842971, type: 3}
+      propertyPath: Slots.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 12903652, guid: c88b1a21ecf5c254598c7e52a7842971, type: 3}
+      propertyPath: Slots.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 12903652, guid: c88b1a21ecf5c254598c7e52a7842971, type: 3}
+      propertyPath: Slots.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 12903652, guid: c88b1a21ecf5c254598c7e52a7842971, type: 3}
+      propertyPath: Slots.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 134206176, guid: c88b1a21ecf5c254598c7e52a7842971, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592728, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592730, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.31192285
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592730, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.15513456
+      objectReference: {fileID: 0}
     - target: {fileID: 1447474477005592731, guid: c88b1a21ecf5c254598c7e52a7842971,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -1641,6 +1676,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1447474477005592731, guid: c88b1a21ecf5c254598c7e52a7842971,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.87172
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592731, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.87172
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592731, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.87172
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592731, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.67
       objectReference: {fileID: 0}
@@ -1654,12 +1704,58 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592734, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2028004352}
+    - target: {fileID: 1447474477005592734, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447474477005592734, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1447474477005592735, guid: c88b1a21ecf5c254598c7e52a7842971,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1447474477005592735, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072685875753382312, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472756266457787675, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214344545515973075, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: positions.Array.data[0].data
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214344545515973075, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: positions.Array.data[1].data
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214344545515973075, guid: c88b1a21ecf5c254598c7e52a7842971,
+        type: 3}
+      propertyPath: positions.Array.data[0].name
+      value: Initial
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8214344545515973075, guid: c88b1a21ecf5c254598c7e52a7842971, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c88b1a21ecf5c254598c7e52a7842971, type: 3}
 --- !u!4 &2028004350 stripped
 Transform:
@@ -1667,3 +1763,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2028004349}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2028004351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1447474477005592735, guid: c88b1a21ecf5c254598c7e52a7842971,
+    type: 3}
+  m_PrefabInstance: {fileID: 2028004349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2028004352
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028004351}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d66cf248b0a2657458dccd65148b75b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

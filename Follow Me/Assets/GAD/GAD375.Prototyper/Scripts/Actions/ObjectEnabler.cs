@@ -13,8 +13,6 @@ namespace GAD375.Prototyper
         }
 
         public ObjectInfo[] objects;
-
-        public GameObject image;
         
         [YarnCommand("show")]
         public void EnableObject(string objname)
@@ -24,12 +22,6 @@ namespace GAD375.Prototyper
             {
                 g.SetActive(true);
             }
-        }
-
-        [YarnCommand("delayshow")]
-        public void DelayEnable()
-        {
-            StartCoroutine(DelayShowRoutine());
         }
 
         [YarnCommand("hide")]
@@ -44,12 +36,6 @@ namespace GAD375.Prototyper
             {
                 Debug.LogErrorFormat("Can't find object named {0}", objname);
             }
-        }
-
-        IEnumerator DelayShowRoutine()
-        {
-            yield return new WaitForSeconds(2);
-            image.SetActive(true);
         }
     }
 }
