@@ -1,8 +1,8 @@
 title: Creak1
 ---
     <<if visited("Creak1") is false>>
-        <<sound CreakTrigger1 creak>>
+        <<sound CreakTriggerSound creak>>
 		<<sound CreakTrigger1 Dialogue_D>>
-        That does not sound too good.
+        That doesn't sound too good...
     <<endif>>
 ===

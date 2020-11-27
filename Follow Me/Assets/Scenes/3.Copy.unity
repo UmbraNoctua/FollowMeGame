@@ -1135,11 +1135,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 390705170192495572, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
-        type: 3}
-      propertyPath: m_Name
-      value: CutsceneImage
-      objectReference: {fileID: 0}
     - target: {fileID: 2706706605047802292, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1319,137 +1314,9 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473394570543760599, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5c8e897165946b84688b48ce093ebcac,
-        type: 3}
-    - target: {fileID: 6473394570543760599, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473394570543760599, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473394570543760599, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473394570543760599, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbdd2eadbf0ef8447ad654dda2b66c3d, type: 3}
---- !u!1 &442028399 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 390705170192495572, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
-    type: 3}
-  m_PrefabInstance: {fileID: 442028398}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &442028400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7685429291936075663, guid: bbdd2eadbf0ef8447ad654dda2b66c3d,
-    type: 3}
-  m_PrefabInstance: {fileID: 442028398}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &442028401
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442028399}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6a1f30965275d2b47b5ac98f4b8b66c3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!225 &442028402
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442028400}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!95 &442028403
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442028400}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 15cd24e3d4fa5554a91b04a912b419b4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &442028406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442028399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a10b907ed0daa4f947eca17f7a672c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animations:
-  - name: CutsceneOwlScare1
-    data: {fileID: 7400000, guid: 7bc7901c3dc2a0447a14c3bb2b10f024, type: 2}
-  - name: CutsceneOwlScare2
-    data: {fileID: 7400000, guid: f7f1b983fe645114388e061cd736a16f, type: 2}
-  - name: 
-    data: {fileID: 0}
-  - name: 
-    data: {fileID: 0}
-  - name: 
-    data: {fileID: 0}
---- !u!114 &442028409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442028400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a10b907ed0daa4f947eca17f7a672c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animations:
-  - name: CutsceneCanvasFadeIn
-    data: {fileID: 7400000, guid: 656ff48be8d9b024895c470fff3fc67c, type: 2}
-  - name: CutsceneCanvasFadeOut
-    data: {fileID: 7400000, guid: 7c47ea53f5862c04b8d58a04c09da42d, type: 2}
 --- !u!1001 &451447654
 PrefabInstance:
   m_ObjectHideFlags: 0
